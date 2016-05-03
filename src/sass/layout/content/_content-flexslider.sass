@@ -1,0 +1,160 @@
+.content-slider
+	.flexslider
+		border: none
+		margin-top: 2px
+		margin-bottom: 0
+	.flex-direction-nav .flex-prev 
+		left: 22px
+		top: 50.7%
+		width: 30px
+		height: 30px
+		+transition(0.3s)
+		+breakpoint($break-479)
+			left: 0
+		&:before
+			+font-icon("chevron-left")
+			font-size: 30px
+			color: #404040
+			+transition(0.3s)
+	.flexslider
+		&:hover
+			.flex-direction-nav
+				.flex-prev
+					&:hover
+						left: 34px
+						+breakpoint($break-479)
+							left: 10px
+						&:before
+							color: #fff
+	.flex-direction-nav .flex-next
+		right: 22px
+		top: 50.7%
+		width: 30px
+		height: 30px
+		+transition(0.3s)
+		+breakpoint($break-479)
+			right: 0
+		&:before
+			+font-icon("chevron-right")
+			color: #404040
+			font-size: 30px
+	.flexslider
+		&:hover
+			.flex-direction-nav
+				.flex-next
+					&:hover
+						right: 34px
+						+breakpoint($break-479)
+							right: 10px
+						&:before
+							color: #fff
+	.flex-viewport li 
+		position: relative
+		z-index: 1
+	.flex-control-nav
+		bottom: 111px
+		+breakpoint($break-479)
+			bottom: 50px
+	.flex-control-nav li
+		margin: 0px 5px
+	.flex-control-paging li a
+		width: 10px
+		height: 10px
+		border: none 
+		box-shadow: none
+		background: rgba(#fff, 0.6)
+	.flex-control-paging li a.flex-active
+		background: #fff
+	.flex-control-paging li a:hover
+		background: #fff
+
+	p 
+		font-size: 40px
+		line-height: 42px
+		position: absolute
+		z-index: 2
+		color: #fff
+		bottom: 137px
+		left: 96.6px
+		+breakpoint($break-479)
+			font-size: 24px
+			line-height: 28px
+			left: 52px
+			bottom: 111px
+		span 
+			display: block
+			margin-top: 2px
+			font-size: 36px
+			+breakpoint($break-479)
+				font-size: 20px
+				line-height: 24px
+
+	.flexslider-label
+		position: relative
+		z-index: 1
+		text-align: center
+		background: #313131
+		padding: 9px 0px 22px
+		margin-top: -8px
+		+breakpoint($break-479)
+			margin-top: 0
+			padding: 5px 0px 10px
+		a 
+			margin: 0px 7.7px
+			+transition(0.3s)
+			&:hover
+				+opacity(0.4)
+			+breakpoint($break-479)
+				margin: 0 5px
+		img 
+			width: auto
+			max-width: 20%
+			display: inline-block
+			+breakpoint($break-479)
+				max-height: 24px
+		&:after
+			content: ""
+			width: 50%
+			height: 14px
+			display: inline-block
+			position: absolute
+			right: 50%
+			margin-right: 13px
+			top: -14px 
+			background: #313131
+			+breakpoint($break-479)
+				height: 7px
+				top: -7px
+				margin-right: 7px
+		&:before 
+			content: ""
+			width: 50%
+			left: 50%
+			margin-left: 13px
+			height: 14px
+			display: inline-block
+			position: absolute
+			right: 0
+			top: -14px 
+			background: #313131
+			+breakpoint($break-479)
+				height: 7px
+				top: -7px
+				margin-left: 7px
+		.triangle	
+			width: 0
+			height: 0
+			border-left: 13px solid #313131
+			border-right: 13px solid #313131
+			border-top: 14px solid transparent
+			border-bottom: 0px
+			position: absolute
+			left: 50%
+			top: -14px
+			margin-left: -13px
+			+breakpoint($break-479)
+				border-left: 7px solid #313131
+				border-right: 7px solid #313131
+				border-top: 7px solid transparent
+				top: -7px
+				margin-left: -7px

@@ -1,0 +1,36 @@
+#footer
+	+clearfix
+	background: #2f2f2f
+	padding: 31px 0px 29px
+	.footer-logo
+		+transition(0.3s)
+		&:hover
+			+opacity(0.4)
+		+breakpoint($break-820)
+			display: block
+			text-align: left
+	.footer-nav
+		padding-top: 11px
+		float: right
+		+breakpoint($break-820)
+			display: block
+			float: none
+			text-align: left
+			+clearfix
+		li 
+			float: left
+			margin-left: 17.7px
+			margin-top: 2px
+			+breakpoint($break-820)
+				float: none
+				display: inline-block
+				margin: 10px 8px 5px 0px
+		a 
+			font-size: 16px
+			line-height: 20px
+			color: #fff
+			+transition(0.3s)
+			&:hover
+				color: #c6a2a2
+			+breakpoint($break-479)
+				font-size: 13px

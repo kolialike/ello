@@ -1,7 +1,7 @@
 body
     margin: 0
     padding: 0
-    font-family: Arial
+    font-family: $hn
     font-weight: 400
 img     
     border: none 
@@ -20,13 +20,16 @@ ul
 
 .wrapper
     position: relative
-    max-width: 1024px
+    max-width: 1160px
     min-width: 320px
     margin: auto
     padding: 0 20px
     +box-sizing(border-box)
-
 .global-wrapper
     width: 100%
     min-width: 320px
     overflow: hidden
+    +breakpoint($break-1023)
+        padding-top: 78px
+    +breakpoint($break-479)
+        padding-top: 44px

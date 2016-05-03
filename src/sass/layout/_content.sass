@@ -1,0 +1,68 @@
+@import content/content-flexslider
+@import content/content-information
+.content-items
+	line-height: 0
+	font-size: 0
+	margin-top: 30px
+	margin-bottom: 85px
+	text-align: center
+	+breakpoint($break-1023)
+		margin-bottom: 20px
+	+breakpoint($break-479)
+		margin-top: 10px
+	.content-item
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		width: 25%
+		+box-sizing(border-box)
+		+breakpoint($break-1023)
+			width: 50%
+			margin-top: 15px
+		+breakpoint($break-479)
+			width: 100%
+		.content-item-img
+			background: #fdfefe
+			border: 2px solid #f1f1f1
+			+border-radius(100px)
+			display: inline-block
+			width: 153px
+			height: 153px
+			img 
+				display: inline-block
+				vertical-align: middle
+			&:before 
+				content: ""
+				width: 0
+				height: 100%
+				display: inline-block
+				vertical-align: middle
+		h5
+			font-size: 18px
+			line-height: 20px
+			text-transform: uppercase
+			padding-top: 18px
+			font-weight: 500
+			padding-bottom: 7px
+			+breakpoint($break-479)
+				font-size: 15px
+		.video
+			color: #ff4040
+		.audio
+			color: #90c085
+		.private
+			color: #504c99
+		.video-production
+			color: #f28b30
+		.video-text
+			padding: 0px 20px
+			+breakpoint($break-479)
+				padding: 0
+		p 
+			font-size: 16px
+			line-height: 19px
+			+box-sizing(border-box)
+			padding: 0px 10px
+			+breakpoint($break-479)
+				font-size: 12px
+
